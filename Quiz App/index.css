@@ -1,0 +1,197 @@
+:root {
+    --neutral: #33ddff;
+    --wrong: #F12012;
+    --correct: #41F112;
+    --bg: url('img/flower_background.jpeg');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightblue;
+    background-image: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    color: black;
+    background-color: var(--neutral);
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.container {
+    background-color: white;
+    max-width: 80%;
+    width: 410px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px;
+}
+
+/*---------- HOME ----------*/
+
+.home-btns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btns button {
+    font-weight: bold;
+    width: 100px;
+    border: none;
+    background-color: grey;
+}
+
+.home-btns button:hover {
+    border: 2px solid black;
+}
+
+.home-btns a {
+    display: block;
+}
+
+/*---------- GAME ----------*/
+
+.answer-container {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer button {
+    margin-right: 10px;
+}
+
+#restart-btn {
+    margin-right: 70px;
+}
+
+/*---------- REWARD ----------*/
+
+/* .container2 {
+    background-color: white;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px;
+} */
+
+#thank-you {
+    position: fixed;
+    top: 30px;
+}
+
+#seereward-btn {
+    margin: 50px 40%;
+    width: max-content;
+}
+
+#seereward-btn:hover {
+    transform: scale(1.3);
+    transition: 1.5s ease;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Hide the image by default */
+.mySlides {
+    display: none;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*---------- EXTRA ----------*/
+
+.not-available {
+    background-color: grey;
+}
+
+.not-available:hover {
+    cursor: not-allowed;
+    border: 2px solid darkblue;
+}
+
+.normal:hover {
+    cursor: default;
+    border: 2px solid darkblue;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}

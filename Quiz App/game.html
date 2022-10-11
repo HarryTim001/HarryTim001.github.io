@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7d8d13aad7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <p id="question"></p>
+        <div class="answer-container">
+            <button id="answer1-btn" onclick="check(answer1Btn)"></button>
+            <button id="answer2-btn" onclick="check(answer2Btn)"></button>
+            <button id="answer3-btn" onclick="check(answer3Btn)"></button>
+            <button id="answer4-btn" onclick="check(answer4Btn)"></button>
+        </div>
+        <div class="footer">
+            <button id="back-btn">Back</button>
+            <button id="next-btn">Next</button>
+            <button id="restart-btn" class="hidden"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button title="click me to see your reward" id="reward-btn" class="hidden"><a
+                    href="reward.html">&#x1F973;</a></button>
+            <p id="score"></p>
+        </div>
+    </div>
+</body>
+
+</html>
