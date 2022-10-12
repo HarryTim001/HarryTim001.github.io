@@ -1,3 +1,4 @@
+const questionCount = document.getElementById('question-count')
 const backBtn = document.getElementById('back-btn')
 const nextBtn = document.getElementById('next-btn')
 const restartBtn = document.getElementById('restart-btn')
@@ -110,6 +111,8 @@ const maxScore = questions.length
 // Show question
 
 function generateQuestion() {
+    questionCount.textContent = `Question ${questionIndex + 1} of ${maxScore}`
+
     questionEl.textContent = questions[questionIndex].question
     answer1Btn.textContent = questions[questionIndex].answer1
     answer2Btn.textContent = questions[questionIndex].answer2

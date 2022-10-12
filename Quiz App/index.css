@@ -50,6 +50,7 @@ a:visited {
 }
 
 .container {
+    position: absolute;
     background-color: white;
     max-width: 80%;
     width: 410px;
@@ -86,6 +87,12 @@ a:visited {
 
 /*---------- GAME ----------*/
 
+#question-count {
+    position: relative;
+    top: -140px;
+    left: -120px;
+}
+
 .answer-container {
     margin: 20px 0;
     display: grid;
@@ -104,6 +111,18 @@ a:visited {
 
 #restart-btn {
     margin-right: 70px;
+}
+
+@media (max-width: 400px) {
+    .footer {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    #question-count {
+        top: -170px;
+        left: -70px;
+    }
 }
 
 /*---------- REWARD ----------*/
@@ -165,6 +184,16 @@ a:visited {
 
     to {
         opacity: 1
+    }
+}
+
+@media (max-height: 600px) {
+    img {
+        height: 70vh;
+    }
+
+    #thank-you {
+        visibility: hidden;
     }
 }
 
