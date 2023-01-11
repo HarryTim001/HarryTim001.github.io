@@ -29,6 +29,8 @@
 
 // For automatic slideshow
 const seeRewardBtn = document.getElementById("seereward-btn")
+// const happyBirthdayText = document.getElementById("thank-you-text")
+const happyBirthdayText = document.getElementById("thank-you")
 
 let slideIndex = 0
 
@@ -46,6 +48,7 @@ function showSlides() {
 seeRewardBtn.addEventListener("click", () => {
     seeRewardBtn.style.display = "none"
     showSlides()
+    happyBirthdayText.innerHTML = `<h1>Happy Birthday Ivy <i class="fa-solid fa-cake-candles"></i></h1>`
 })
 
 // ---------- Source: w3schools ---------- //
